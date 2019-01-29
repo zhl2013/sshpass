@@ -1,4 +1,7 @@
 *.pyc
 .venv_py
+.venv_py2
 .idea
 .vscode
+build
+dist

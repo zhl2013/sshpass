@@ -32,16 +32,16 @@ def calGoogleCode(secretKey):
         googleCode = '0' + googleCode
     return googleCode
 
-def getpassword(service, username,alian="password"):
+def getpassword(service, username,alias="password"):
     ''' Get password from keychain '''
     
-    password = keyring.get_password(service, username+"/"+alian)
+    password = keyring.get_password(service, username+"/"+alias)
 
     while not password:
         # ask and save a password.
-        password = getpass.getpass(alian+": ")
+        password = getpass.getpass(alias+": ")
         if not password:
-            print( "Please enter a "+alian)
+            print( "Please enter a "+alias)
     return password
 
 def gettermsize():
