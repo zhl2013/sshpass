@@ -1,1 +1,4 @@
 *.pyc
+.venv_py
+.idea
+.vscode
